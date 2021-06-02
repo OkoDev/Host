@@ -1,0 +1,253 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0 0 70px;
+}
+
+.auth__link {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+.buy {
+  background-color: #fff;
+}
+
+.buy__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.buy__title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 25px;
+  opacity: .8;
+}
+
+.buy__subtitle {
+  opacity: .6;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+.buy__input-wrapper {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto 50px;
+  padding: 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.buy__www {
+  justify-content: center;
+}
+
+.buy__help {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  opacity: .4;
+}
+
+.buy__input-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+}
+
+.buy__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.buy__domain {
+  margin-right: 50px;
+  opacity: .4;
+}
+
+.buy__select {
+  justify-content: flex-end;
+}
+
+.buy__table {
+  width: 900px;
+}
+
+.buy__table .table__row {
+  display: flex;
+}
+
+.buy__table .table__row .table__cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  width: 25%;
+  opacity: .4;
+}
+
+.buy__table .table__row .table__cell--top {
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+
+.buy__table .table__row .table__cell--bottom {
+  border-right: 1px solid #d9d9d9;
+}
+
+.buy__table .table__row .table__cell--nrb {
+  border-right: none;
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff") format("woff"),url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.woff") format("woff"),url("../fonts/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff") format("woff"),url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff") format("woff"),url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  color: #ffffff;
+}
+
+.header__title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.header__subtitle {
+  font-style: italic;
+  font-size: 32px;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.view-port {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.first-screen {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  background: url("../img/header_bg.webp") no-repeat;
+  background-size: cover;
+}
+.nav {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 60px;
+  color: #fff;
+  background: transparent;
+}
+
+.nav__brand {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  height: 60px;
+}
+
+.nav__item {
+  position: relative;
+  margin: 22px 15px 5px;
+  font-size: 12px;
+}
+
+.nav__item:hover .nav__menu-border {
+  opacity: 1;
+}
+
+.nav__link {
+  color: #fff;
+}
+
+.nav__menu-border {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  width: 100%;
+  opacity: 0;
+  background-color: #fff;
+  transition: .3s opacity;
+}
