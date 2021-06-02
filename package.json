@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "host",
   "main": "index.html",
-  "homepage": "https://okodev.github.io/host",
+  "homepage": "https://okodev.github.io/Host",
   "scripts": {
-    "deploy": "gh-pages -d host"
+    "deploy": "gh-pages -d Host"
   },
   "author": "oko.dev",
   "license": "ISC",
@@ -31,5 +31,7 @@
     "gulp-webpcss": "^1.1.1",
     "webp-converter": "2.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^3.2.0"
+  }
 }
