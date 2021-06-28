@@ -26,6 +26,7 @@ $font-color: #fff;
     @include clear-list;
     display: flex;
     height: $nav-height;
+
   }
 
   &__item {

@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "host",
   "main": "index.html",
-  "homepage": "https://okodev.github.io/Host",
+  "homepage": "https://okodev.github.io/Host/",
   "scripts": {
     "deploy": "gh-pages -d Host"
   },
-  "author": "oko.dev",
+  "author": "oko.webdev@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.0",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -32,6 +33,6 @@
     "webp-converter": "2.2.3"
   },
   "dependencies": {
-    "gh-pages": "^3.2.0"
+    "font-awesome": "^4.7.0"
   }
 }

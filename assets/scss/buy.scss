@@ -2,8 +2,7 @@
 @import "partials/params";
 
 
-$opacity: .6;
-
+$color: $buy-border-color;
 .buy {
   background-color: #fff;
 
@@ -22,14 +21,14 @@ $opacity: .6;
   }
 
   &__subtitle {
-    opacity: $opacity;
+    opacity: .6;
     margin-bottom: 50px;
     font-weight: normal;
   }
 
   &__input-wrapper {
     display: flex;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto 50px;
     padding: 5px;
     border: 1px solid $buy-border-color;
@@ -43,7 +42,11 @@ $opacity: .6;
     display: flex;
     align-items: center;
     width: 10%;
-    opacity: $opacity - 0.2;
+    color: $color;
+  }
+
+  &__icon {
+    margin-right: 20px;
   }
 
   &__input-block {
@@ -64,11 +67,43 @@ $opacity: .6;
 
   &__domain {
     margin-right: 50px;
-    opacity: $opacity - 0.2;
+    color: $color;
   }
 
   &__select {
+    position: relative;
     justify-content: flex-end;
+    cursor: pointer;
+
+    &:hover{
+      .select__dropdown{
+        opacity: 1;
+        z-index: 99;
+      }
+    }
+
+    & .select__dropdown {
+      @include clear-list;
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      right: -6px;
+      top: 40px;
+      z-index: -100;
+      background-color: #ffffff;
+      border: 1px solid $buy-border-color;
+      border-bottom: none;
+      opacity: 0;
+      transition: .3s opacity;
+
+
+    }
+
+    & .select__item {
+      text-transform: uppercase;
+      padding: 2.5px 15px;
+      border-bottom: 1px solid $buy-border-color;
+    }
   }
 
   &__table {
@@ -78,20 +113,36 @@ $opacity: .6;
       display: flex;
 
       & .table__cell {
+        position: relative;
         @include flex-center(row);
         padding: 30px 50px;
         width: 25%;
-        opacity: $opacity - .2;
+        color: $color;
 
-        &--top{
+        &:after {
+          position: absolute;
+          display: block;
+          content: '';
+          height: 10px;
+          width: 10px;
+          right: -5px;
+          bottom: -5px;
+          z-index: 99;
+          background-color: #ffffff;
+
+        }
+
+        &--top {
           border-bottom: 1px solid $buy-border-color;
           border-right: 1px solid $buy-border-color;
         }
-        &--bottom{
+
+        &--bottom {
           border-right: 1px solid $buy-border-color;
 
         }
-        &--nrb{
+
+        &--nrb {
           border-right: none;
 
         }

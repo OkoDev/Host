@@ -1,4 +1,4 @@
-
+@import "params";
 
 @mixin clear {
   padding: 0;
@@ -10,9 +10,20 @@
   list-style: none;
 }
 
-@mixin flex-center($dir: column){
+@mixin flex-center($dir: column) {
   display: flex;
   flex-direction: $dir;
   justify-content: center;
   align-items: center;
 }
+
+@mixin package-color($color:$yellow) {
+  & .item__value{
+    color: $color;
+  }
+  & .tile__cost{
+    border-bottom-color: $color !important;
+  }
+}
+
+;

@@ -1,5 +1,7 @@
 @import "partials/params";
 @import "partials/mixins";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
 
 html, body {
   @include clear;
@@ -36,4 +38,8 @@ a {
   height: 100vh;
   background: url('../img/header_bg.webp') no-repeat;
   background-size: cover;
+}
+
+.hide{
+  display: none !important;
 }
