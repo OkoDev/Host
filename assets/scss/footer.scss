@@ -1,0 +1,118 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-color;
+  padding-bottom: 20px;
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 2px solid $footer-color;
+  }
+
+  &__brand {
+    color: $footer-color;
+    font-weight: bold;
+  }
+
+  &__nav {
+    @include clear-list;
+    display: flex;
+    margin: 0 10px;
+    font-size: 14px;
+
+    & .nav__item {
+    }
+
+    & .nav__link {
+      text-transform: uppercase;
+      color: $footer-color;
+      transition: .2s all;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: 20px 0;
+    line-height: 1.7;
+    font-size: 12px;
+  }
+
+  &__block {
+    width: (100% / 3);
+    padding: 20px;
+  }
+
+  &__text {
+
+  }
+
+  &__map {
+    display: flex;
+    padding: 0 30px;
+    border-right: 1px solid $footer-color;
+    border-left: 1px solid $footer-color;
+  }
+
+  &__list {
+    @include clear-list;
+    width: 50%;
+    font-size: 13px;
+
+    & .list__item {
+      padding: 5px;
+
+      &:hover {
+        color: #ffffff;
+
+        .list__link {
+          color: #ffffff;
+          margin-left: 10px;
+          transition: .3s;
+
+        }
+      }
+    }
+
+    & .list__icon {
+
+    }
+
+    & .list__link {
+      margin-left: 5px;
+      color: $footer-color;
+
+    }
+  }
+
+
+  &__contact {
+    & .contact__icon {
+      margin-right: 10px;
+    }
+
+    & .contact__item {
+      margin-bottom: 5px;
+      a {
+        color: $footer-color;
+      }
+      &:hover {
+        .contact__link {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+
+

@@ -35,14 +35,14 @@ let path = {
     src: {
         html: [source + '/*.html', "!" + source + '/_*.html'],
         css: source + '/scss/**/*.scss',
-        js: source + '/**/*.js',
+        js: source + '/js/*.js',
         img: source + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
         fonts: source + '/fonts/*.ttf'
     },
     watch: {
         html: source + '/**/*.html',
         css: source + '/**/*.*scss',
-        js:  source + '/js/**/*.js',
+        js:  source + '/**/*.js',
         img: source + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
     },
     clean: './' + project + '/',
