@@ -356,7 +356,7 @@
 
 .footer__map {
   display: flex;
-  padding: 0 30px;
+  padding: 20px 30px;
   border-right: 1px solid #d9d9d9;
   border-left: 1px solid #d9d9d9;
 }
@@ -370,7 +370,7 @@
 }
 
 .footer__list .list__item {
-  padding: 5px;
+  padding: 0 5px 5px;
 }
 
 .footer__list .list__item:hover {

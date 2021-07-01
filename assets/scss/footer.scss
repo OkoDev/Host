@@ -57,7 +57,7 @@
 
   &__map {
     display: flex;
-    padding: 0 30px;
+    padding: 20px 30px;
     border-right: 1px solid $footer-color;
     border-left: 1px solid $footer-color;
   }
@@ -68,7 +68,7 @@
     font-size: 13px;
 
     & .list__item {
-      padding: 5px;
+      padding: 0 5px 5px;
 
       &:hover {
         color: #ffffff;
