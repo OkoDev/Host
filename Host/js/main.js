@@ -1,3 +1,13 @@
+const drawer = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__box');
+
+
+drawer.addEventListener('click', (event) => {
+    drawer.classList.toggle('active');
+    menu.classList.toggle('active');
+
+})
+
 const DELAY = 500;
 let CURRENT_SLIDE = 1;
 const ANIMATION_DELAY = 8000;
@@ -40,3 +50,6 @@ function getSliderId() {
     CURRENT_SLIDE = CURRENT_SLIDE % 4 === 0 ? 1 : CURRENT_SLIDE;
     return CURRENT_SLIDE;
 }
+
+
+

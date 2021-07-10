@@ -15,3 +15,20 @@ $buy-border-color: #d9d9d9;
 $view-port: 1200px;
 $nav-height: 60px;
 $auth-height: 70px;
+
+// Breakpoints
+@mixin xs {
+  @media (max-width: 575.98px) { @content; }
+}
+@mixin sm {
+  @media (max-width: 767.98px) { @content; }
+}
+@mixin md {
+  @media (max-width: 991.98px) { @content; }
+}
+@mixin lg {
+  @media (max-width: 1199.98px) { @content; }
+}
+@mixin xl {
+  @media (max-width: 1399.98px) { @content; }
+}

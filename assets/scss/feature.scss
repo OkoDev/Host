@@ -7,10 +7,21 @@
   &__content{
     display: flex;
     padding: 60px;
+    @include sm {
+      padding: 10px;
+      flex-wrap: wrap;
+    }
   }
 
   &__tile{
     @include flex-center;
+    text-align: center;
+    width: 25%;
+    @include sm {
+      width: 40%;
+      margin: 0 auto;
+      padding: 15px 0;
+    }
 
     & .tile__icon{
       @include flex-center(row);
@@ -32,6 +43,7 @@
       margin-bottom: 10px;
     }
     & .tile__text{
+      flex-grow: 1;
       text-align: center;
       opacity: .7;
     }

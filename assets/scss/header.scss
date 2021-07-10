@@ -4,8 +4,6 @@
 .header {
   @include flex-center;
   flex: 1 0 auto;
-  //background: url('../img/header_bg.webp') no-repeat;
-  //background-size: cover;
   color: #ffffff;
 
   &__title {
@@ -17,5 +15,9 @@
   &__subtitle {
     font-style: italic;
     font-size: 32px;
+    @include xs {
+      font-size: 24px;
+      margin: 0 5px;
+    }
   }
 }

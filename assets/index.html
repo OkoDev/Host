@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
     <title>Scss</title>
     <link rel="stylesheet" href="css/bundle.min.css">
 </head>
 <body>
 <div class="wrapper ">
-    <div class="first-screen">
-        <div class="nav view-port">
-            <div class="nav__brand"> Host</div>
-            <div>
+    <div class="first-screen view-port">
+        <div class="nav ">
+            <div class="nav__brand">Host</div>
                 <ul class="nav__menu">
                     <li class="nav__item">
                         <a href="" class="nav__link">
@@ -18,12 +19,12 @@
                             <span class="nav__menu-border"></span>
                         </a></li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">
+                        <a href="#domain" class="nav__link">
                             Domain
                             <span class="nav__menu-border"></span>
                         </a></li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">
+                        <a href="#package" class="nav__link">
                             Hosting
                             <span class="nav__menu-border"></span>
                         </a></li>
@@ -43,21 +44,32 @@
                             <span class="nav__menu-border"></span>
                         </a></li>
                 </ul>
-
+            <div class="drawer-menu">
+<!--                <input id="menu__toggle" type="checkbox" />-->
+                <div class="menu__btn">
+                    <span></span>
+                </div>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="#domain">Domain</a></li>
+                    <li><a class="menu__item" href="#package">Hosting</a></li>
+                    <li><a class="menu__item" href="#">Clients</a></li>
+                    <li><a class="menu__item" href="#">Blog</a></li>
+                    <li><a class="menu__item" href="#">Support</a></li>
+                </ul>
             </div>
         </div>
         <header class="header">
             <h1 class="header__title">Hello</h1>
             <h3 class="header__subtitle"> We love our work...</h3>
             <h3 class="header__subtitle">And we are taking it seriously...</h3>
-
         </header>
-        <div class="auth view-port">
+        <div class="auth">
         <a href="" class="auth__link">Login</a>
         <a href="" class="auth__link">Register</a>
     </div>
     </div>
-    <section class="buy">
+    <section class="buy" id="domain">
         <div class="buy__content view-port">
             <h2 class="buy__title">Wold you like to buy new domain?</h2>
             <h4 class="buy__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -97,7 +109,7 @@
 
         </div>
     </section>
-    <section class="package">
+    <section class="package" id="package">
         <img src="img/package_bg.webp" alt="" class="package__img"></img>
         <article class="package__tiles view-port">
             <div class="package__tile package__tile--yellow">
@@ -353,7 +365,7 @@
                     <i class="fa fa-bolt" aria-hidden="true"></i>
                 </div>
                 <div class="tile__title">Fast Servers</div>
-                <div class="tile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis.</div>
+                <div class="tile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, porro?</div>
             </div>
             <div class="feature__tile">
                 <div class="tile__icon tile__icon--blue">
@@ -367,7 +379,7 @@
                     <i class="fa fa-arrows" aria-hidden="true"></i>
                 </div>
                 <div class="tile__title">Domain Servers</div>
-                <div class="tile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis.</div>
+                <div class="tile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ducimus eaque expedita facilis incidunt inventore maxime odio odit, sequi velit.</div>
             </div>
             <div class="feature__tile">
                 <div class="tile__icon tile__icon--orange">
@@ -461,6 +473,6 @@
         </div>
     </footer>
 </div>
-<script src="js/slider.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

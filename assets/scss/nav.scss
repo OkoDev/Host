@@ -5,7 +5,6 @@
 $font-color: #fff;
 
 .nav {
-  //position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -20,12 +19,18 @@ $font-color: #fff;
     margin-left: 40px;
     font-weight: bold;
     font-size: 20px;
+    @include xs {
+      margin-left: 20px;
+    }
   }
 
   &__menu {
     @include clear-list;
     display: flex;
     height: $nav-height;
+      @include sm {
+        display: none;
+      }
 
   }
 

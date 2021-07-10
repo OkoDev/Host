@@ -102,6 +102,7 @@ css = (p) => src(path.src.css)
     .pipe(browsersync.stream())
 
 js = (p) => src(path.src.js)
+    .pipe(concat('main.js'))
     .pipe(dest(path.build.js))
     .pipe(
         uglify()

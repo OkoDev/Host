@@ -40,3 +40,6 @@ function getSliderId() {
     CURRENT_SLIDE = CURRENT_SLIDE % 4 === 0 ? 1 : CURRENT_SLIDE;
     return CURRENT_SLIDE;
 }
+
+
+

@@ -11,6 +11,10 @@ $color: $buy-border-color;
     flex-direction: column;
     align-items: center;
     padding: 60px;
+    @include xs{
+      padding: 60px 20px;
+
+    }
   }
 
   &__title {
@@ -18,24 +22,29 @@ $color: $buy-border-color;
     font-size: 25px;
     margin-bottom: 25px;
     opacity: .8;
+    text-align: center;
   }
 
   &__subtitle {
     opacity: .6;
     margin-bottom: 50px;
     font-weight: normal;
+    text-align: center;
   }
 
   &__input-wrapper {
     display: flex;
     width: 100%;
-    margin: 0 auto 50px;
+    //margin: 0 auto 50px;
+    margin: 0 0 50px;
     padding: 5px;
     border: 1px solid $buy-border-color;
+
   }
 
   &__www {
     justify-content: center;
+    @include xs{margin:0 7px}
   }
 
   &__help {
@@ -46,7 +55,6 @@ $color: $buy-border-color;
   }
 
   &__icon {
-    margin-right: 20px;
   }
 
   &__input-block {
@@ -68,12 +76,18 @@ $color: $buy-border-color;
   &__domain {
     margin-right: 50px;
     color: $color;
+    @include xs{
+      margin-right: 10px;
+    }
   }
 
   &__select {
     position: relative;
     justify-content: flex-end;
     cursor: pointer;
+    @include xs {
+      justify-content:center;
+    }
 
     &:hover{
       .select__dropdown{
@@ -108,6 +122,9 @@ $color: $buy-border-color;
 
   &__table {
     width: 900px;
+    @include md {
+      width: 100%;
+    }
 
     & .table__row {
       display: flex;
@@ -115,9 +132,14 @@ $color: $buy-border-color;
       & .table__cell {
         position: relative;
         @include flex-center(row);
+        justify-content:center;
+        text-align: center;
         padding: 30px 50px;
         width: 25%;
         color: $color;
+        @include sm {
+          padding: 5px 15px;
+        }
 
         &:after {
           position: absolute;
@@ -127,7 +149,7 @@ $color: $buy-border-color;
           width: 10px;
           right: -5px;
           bottom: -5px;
-          z-index: 99;
+          z-index: 3;
           background-color: #ffffff;
 
         }

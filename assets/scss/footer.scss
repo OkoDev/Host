@@ -5,6 +5,9 @@
   background-color: $footer-bg-color;
   color: $footer-color;
   padding-bottom: 20px;
+  @include sm {
+    padding-bottom: 0;
+  }
 
   &__header {
     align-items: center;
@@ -17,6 +20,11 @@
   &__brand {
     color: $footer-color;
     font-weight: bold;
+    margin-left: 40px;
+    @include sm {
+      margin-left: 10px;
+
+    }
   }
 
   &__nav {
@@ -24,8 +32,16 @@
     display: flex;
     margin: 0 10px;
     font-size: 14px;
+    @include sm {
+      margin: 0;
+      font-size: 13px;
+    }
 
     & .nav__item {
+      margin-top: 0;
+      @include sm {
+        margin: 0 7px;
+      }
     }
 
     & .nav__link {
@@ -44,11 +60,22 @@
     padding: 20px 0;
     line-height: 1.7;
     font-size: 12px;
+    @include sm {
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      //padding-bottom: 0;
+    }
   }
 
   &__block {
     width: (100% / 3);
     padding: 20px;
+    @include sm {
+      padding: 10px;
+      width: 40%;
+
+    }
   }
 
   &__text {
@@ -60,11 +87,20 @@
     padding: 20px 30px;
     border-right: 1px solid $footer-color;
     border-left: 1px solid $footer-color;
+    @include sm {
+      justify-content: space-around;
+      width:100%;
+      border-right: none;
+      border-left: none;
+      border-top: 1px solid $footer-color;
+      order: 3;
+
+    }
   }
 
   &__list {
     @include clear-list;
-    width: 50%;
+    width: 35%;
     font-size: 13px;
 
     & .list__item {
@@ -95,6 +131,9 @@
 
 
   &__contact {
+    @include sm {
+      border-left: 1px solid $footer-color;
+    }
     & .contact__icon {
       margin-right: 10px;
     }
