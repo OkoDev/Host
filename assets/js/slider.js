@@ -14,23 +14,23 @@ slider.addEventListener('click', function (event) {
 initSlider();
 
 function showSliderId(id) {
-    var current = slider.querySelector('[data-slide="'+ id + '"]');
+    var current = slider.querySelector('[data-slide="' + id + '"]');
 
-    slider.querySelectorAll('.slider__slide').forEach(function(slide) {
+    slider.querySelectorAll('.slider__slide').forEach(function (slide) {
         slide.style.opacity = 0;
-        setTimeout(function() {
+        setTimeout(function () {
             slide.classList.add('hide');
         }, DELAY);
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
         current.classList.remove('hide');
         current.style.opacity = 1;
     }, DELAY)
 }
 
 function initSlider() {
-    setInterval(function() {
+    setInterval(function () {
         showSliderId(getSliderId());
     }, ANIMATION_DELAY)
 }
