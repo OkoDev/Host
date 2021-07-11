@@ -15,6 +15,9 @@
     justify-content: space-between;
     padding: 30px 0;
     border-bottom: 2px solid $footer-color;
+    @include sm {
+      padding: 15px 0;
+    }
   }
 
   &__brand {
@@ -31,15 +34,14 @@
     @include clear-list;
     display: flex;
     margin: 0 10px;
-    font-size: 14px;
     @include sm {
       margin: 0;
-      font-size: 13px;
     }
 
     & .nav__item {
       margin-top: 0;
       @include sm {
+        font-size: 13px;
         margin: 0 7px;
       }
     }
@@ -59,7 +61,7 @@
     display: flex;
     padding: 20px 0;
     line-height: 1.7;
-    font-size: 12px;
+    font-size: 14px;
     @include sm {
       padding: 0;
       flex-wrap: wrap;
@@ -84,11 +86,11 @@
 
   &__map {
     display: flex;
-    padding: 20px 30px;
+    justify-content: space-evenly;
+    padding: 20px 20px;
     border-right: 1px solid $footer-color;
     border-left: 1px solid $footer-color;
     @include sm {
-      justify-content: space-around;
       width:100%;
       border-right: none;
       border-left: none;
@@ -100,11 +102,11 @@
 
   &__list {
     @include clear-list;
-    width: 35%;
-    font-size: 13px;
+    font-size: 14px;
+    padding-right: 10px;
 
     & .list__item {
-      padding: 0 5px 5px;
+      padding-bottom: 5px;
 
       &:hover {
         color: #ffffff;
